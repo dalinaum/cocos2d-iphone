@@ -170,6 +170,8 @@
         [_windowGLView makeKeyAndOrderFront:self];
 		[_windowGLView makeMainWindow];
     }
+  // issue #681
+  [openGLview keyDown:nil];
 	
 	// issue #1189
 	[_windowGLView makeFirstResponder:openGLview];
